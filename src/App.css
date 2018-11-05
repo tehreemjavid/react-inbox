@@ -1,38 +1,74 @@
-<div class="row toolbar">
-  <div class="col-md-12">
-    <p class="pull-right">
-      <span class="badge badge">2</span>
-      unread messages
-    </p>
+.message {
+  margin-left: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #efefef;
+}
 
-    <button class="btn btn-default">
-      <i class="fa fa-check-square-o"></i>
-    </button>
+.message a {
+  color: black;
+}
 
-    <button class="btn btn-default">
-      Mark As Read
-    </button>
+.message a:hover, .message a:active, .message a:focus {
+  text-decoration: none;
+}
 
-    <button class="btn btn-default">
-      Mark As Unread
-    </button>
+.message + .message {
+  border-top: 1px solid #efefef;
+}
 
-    <select class="form-control label-select">
-      <option>Apply label</option>
-      <option value="dev">dev</option>
-      <option value="personal">personal</option>
-      <option value="gschool">gschool</option>
-    </select>
+.message.read {
+  background: #efefef;
+}
 
-    <select class="form-control label-select">
-      <option>Remove label</option>
-      <option value="dev">dev</option>
-      <option value="personal">personal</option>
-      <option value="gschool">gschool</option>
-    </select>
+.message.unread {
+  font-weight: bold;
+}
 
-    <button class="btn btn-default">
-      <i class="fa fa-trash-o"></i>
-    </button>
-  </div>
-</div>
+.message.selected {
+  background: #ffffcc;
+}
+
+.message:hover {
+  margin-left: -3px;
+  border-left: 3px solid #ccc;
+}
+
+.message-body {
+  background: #ccc;
+  margin-left: 0;
+  margin-bottom: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.toolbar {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.toolbar .label-select {
+  width: auto;
+  display: inline;
+}
+
+.toolbar select,
+.toolbar button,
+.toolbar a,
+.toolbar .badge {
+  margin-right: .5em;
+  margin-bottom: .5em;
+}
+
+footer.spacer {
+  margin-bottom: 20em;
+}
+
+.label {
+  margin-right: .5em;
+}
+
+.fa-close {
+  cursor: pointer;
+}
