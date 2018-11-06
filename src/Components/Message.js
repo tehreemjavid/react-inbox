@@ -4,7 +4,7 @@ const Message = (props) => {
     return (
         
         <div>
-          <div className="row message read">
+          <div className={`row message ${props.message.read ? 'read' : 'unread'} `}>
     <div className="col-xs-1">
       <div className="row">
         <div className="col-xs-2">
